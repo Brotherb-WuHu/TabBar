@@ -38,7 +38,7 @@ export default {};
   box-shadow: 0px -3px 1px rgba(100 100, 100, 0.2);
 }
 .Tabbar-item {
-  flex: 1;
+  flex: 2;
   text-align: center;
   /* 很多移动app bar用的都是 height:49px */
   height: 49px;
