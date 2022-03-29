@@ -1,26 +1,13 @@
 <template>
   <div id="Tabbar">
-    <div class="Tabbar-item">
-      <img src="../../assets/img/tabbar/home.svg" alt="" />
-      <div>首页</div>
-    </div>
-    <div class="Tabbar-item">
-      <img src="../../assets/img/tabbar/category.svg" alt="" />
-      <div>分类</div>
-    </div>
-    <div class="Tabbar-item">
-      <img src="../../assets/img/tabbar/shopcart.svg" alt="" />
-      <div>购物车</div>
-      <div class="Tabbar-item">
-        <img src="../../assets/img/tabbar/profile.svg" alt="" />
-        <div>我的</div>
-      </div>
-    </div>
+    <slot></slot>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "TabBar",
+};
 </script>
 
 <style>
@@ -36,15 +23,5 @@ export default {};
   bottom: 0;
 
   box-shadow: 0px -3px 1px rgba(100 100, 100, 0.2);
-}
-.Tabbar-item {
-  flex: 2;
-  text-align: center;
-  /* 很多移动app bar用的都是 height:49px */
-  height: 49px;
-}
-.Tabbar-item img {
-  width: 24px;
-  height: 24px;
 }
 </style>
