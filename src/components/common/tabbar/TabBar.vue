@@ -1,5 +1,5 @@
 <template>
-  <div id="Tabbar">
+  <div id="tab-bar">
     <slot></slot>
   </div>
 </template>
@@ -11,17 +11,15 @@ export default {
 </script>
 
 <style>
-/* 布局 */
-#Tabbar {
+#tab-bar {
   display: flex;
-  background-color: #f2f2f2;
-
-  /* 常见操作1 用于把 bar 拉到底下，很神奇*/
+  background-color: #f6f6f6;
+  /* 固定在下方 */
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
 
-  box-shadow: 0px -3px 1px rgba(100 100, 100, 0.2);
+  box-shadow: 0px -3px 1px rgba(100, 100, 100, 0.1);
 }
 </style>

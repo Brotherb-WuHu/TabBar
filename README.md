@@ -1,4 +1,4 @@
-# sidebar
+# shoppingmall
 
 ## Project setup
 ```
